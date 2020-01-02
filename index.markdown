@@ -4,6 +4,13 @@ layout: home
 
 # Obstipuere frigida rediit collesque et credensque tempusque
 
+<aside>
+This is an aside.
+</aside>
+<aside id="x1">
+Carpat et intellegat non solita robora, cavas aliturque iuvencam ingentia sola refugit quos; stat. Et multum inposuit fratrem resolvent dextroque substiterat aurum; nactasque tecta: hoc Aurora augere; vel.
+</aside>
+
 ## Regalemque cadunt
 
 Lorem markdownum letum. Circumdata sorores sui cognatumque iuris et protulit
@@ -12,7 +19,7 @@ referam huic quo caelestique modo foedus: facta. Bona auribus fortis at spoliis
 dixit te erat conplevit est, subruit. Colchide obiectat nunc mitia, a mortis ad
 protinus corpore Eumenidum et artes puppes ire absit convulso, arte.
 
-<aside id="x1">
+<aside>
 Carpat et intellegat non solita robora, cavas aliturque iuvencam ingentia sola refugit quos; stat. Et multum inposuit fratrem resolvent dextroque substiterat aurum; nactasque tecta: hoc Aurora augere; vel.
 </aside>
 Arcus tibi quam agitata quae Gradivus oro, ausa dixit frugum mille nomine
@@ -89,3 +96,6 @@ Relictus iubes Hippomenes nasci licet. Matrem usum: dis harena caudice
 [albis](http://matrona.org/ad), sub orbam et o metum stabat mihi maior. Orbem
 insignia et duris truces profugam custode visaque, ille nec neque erat debere
 molis liquidi.
+<aside>
+Carpat et intellegat non solita robora, cavas aliturque iuvencam ingentia sola refugit quos; stat. Et multum inposuit fratrem resolvent dextroque substiterat aurum; nactasque tecta: hoc Aurora augere; vel.
+</aside
