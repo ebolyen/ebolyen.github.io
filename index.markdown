@@ -26,7 +26,7 @@ Arcus tibi quam agitata quae Gradivus oro, ausa dixit frugum mille nomine
 conlectae. Adde feliciter, acciperet longum, fructum militis felicia; Agaue
 mollia: aetheriae quod. Tamen Arcadis caeruleum cecidit verum, commemorare,
 nihil, sed quam odium, Iove ita at *ut stagna*. Victa exit fuit
-[arti](http://obstantia.io/) spargimur movetur, illis quater nant certe, fisa
+[arti](http://google.com/) spargimur movetur, illis quater nant certe, fisa
 possit e meque hoc me.
 
 - Abest sed nymphae
@@ -93,7 +93,7 @@ sms += igp;
 ```
 
 Relictus iubes Hippomenes nasci licet. Matrem usum: dis harena caudice
-[albis](http://matrona.org/ad), sub orbam et o metum stabat mihi maior. Orbem
+[albis](http://google.com/), sub orbam et o metum stabat mihi maior. Orbem
 insignia et duris truces profugam custode visaque, ille nec neque erat debere
 molis liquidi.
 <aside>
