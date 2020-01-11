@@ -4,13 +4,24 @@ body {
     margin-left: 1px;
     margin-right: 1px;
     background: snow;
-    margin-top:25px;
     overflow-y: scroll;
+    height: 100%;
 }
 
-main, nav {
-    max-width: 800px;
-    min-width:400px;
+a:link {
+    color: dodgerblue;
+}
+
+a:visited {
+    color: indigo;
+}
+
+a:active {
+    color: orangered;
+}
+
+main, nav, footer {
+    min-width:300px;
 }
 
 main::after {
@@ -19,9 +30,15 @@ main::after {
     display: block;
 }
 
-aside, nav > section {
-    padding: 15px !important;
+aside, nav > section, footer > section {
+    padding: 15px 15px 15px 12px !important;
     text-align: left;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    bottom: 0px;
 }
 
 aside {
@@ -29,19 +46,89 @@ aside {
     border-left: 3px solid orange;
     font-size: 0.8em;
     line-height: 1.3em;
+    margin-bottom: 15px;
 }
 
-nav > section {
+aside.warning, aside.danger {
+    background-color: pink;
+    border-left: 3px solid red;
+}
+
+aside.danger {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+nav > section, footer > section {
     background-color: #f0f0f0;
-    border-left: 3px solid dodgerblue;
+    border-left: 3px solid green;
+}
+
+nav.site-nav {
+    margin-bottom: 15px
+}
+
+nav.site-nav  > section > h1 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+nav.site-nav  > section > p {
+    font-size: 0.8em;
+    line-height: 1.3em;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+nav.site-nav > section > ul {
+    list-style: none;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+
+nav.site-nav > section > ul > li {
+    display: inline-block;
+}
+
+nav.site-nav > section > ul > li:hover {
+    background: green;
+}
+
+nav.site-nav > section > ul > li > a {
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: green;
+}
+
+nav.site-nav > section > ul > li > a:hover {
+    color: #f0f0f0
 }
 
 
+@media only screen and (min-width: 1010px) {
+    body {
+        margin-top: 25px;
+    }
 
-@media only screen and (min-width: 992px) {
-    main, nav {
+    main, nav, footer {
+	max-width: 800px;
         margin: 0 auto;
-        padding-right:248px;
+        padding-right: 248px;
+    }
+
+    footer, aside.danger {
+	max-width: 1048px;
+	padding-right: 0px;
     }
 
     aside, nav > section {
@@ -50,12 +137,46 @@ nav > section {
         clear: right;
         position: relative;
         margin-left: -233px;
-        transform: translate(calc(100% + 15px));
+        left: 248px;
 
         margin-bottom: 15px;
         overflow: auto;
     }
 
+    aside.danger {
+        width: calc(100% - 15px);
+        float: unset;
+        clear: both;
+        margin-left: unset;
+        left: unset;
+        overflow: initial;
+        padding-right: 248px !important;
+    }
+
+    nav.site-nav > section > ul {
+        list-style: none;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        float: initial;
+        position: initial;
+        top: initial;
+        right: initial;
+    }
+
+    nav.site-nav > section > ul > li {
+        display: block;
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+
+    nav.site-nav > section > ul > li > a {
+        margin-left: -15px;
+        padding-left: 15px;
+        text-decoration: none;
+        display: block;
+    }
 
 }
 
@@ -65,14 +186,15 @@ article > * {
 
 article > .highlighter-rouge {
     padding: 0 0;
-    border-left: 3px solid dodgerblue; 
+    border-left: 3px solid dodgerblue;
 }
 article > .highlighter-rouge.language-escape {
-    border-left: 3px solid grey; 
+    border-left: 3px solid grey;
 }
 
 article > ul, article > ol {
-    margin: 0 15px;
+    margin:  0 15px;
+    padding-bottom: 15px;
 }
 
 *:target {
@@ -81,15 +203,43 @@ article > ul, article > ol {
 
 article > h1, article > h2, article > h3, article > h4, article > h5, article > h6 {
     line-height: 1.1em;
-    padding: 0px 15px 5px 12px;
+    padding: 5px 15px 5px 12px;
+    border-left: 3px solid green;
+    display: block;
+}
+
+article > header {
+    padding: 5px 15px 5px 0;
     border-left: 3px solid green;
 }
 
-body code {
+article > header > h1 {
+    margin: 0px;
+    line-height: 1.1em;
+    padding-left: 12px;
+}
+
+article > header > p {
+    padding-left: 12px;
+    margin-bottom: 0px;
+    margin-top: .3em;
+}
+
+pre code {
     line-height: 1em;
     display: inline-block;
     padding: 15px;
     background: #f0f0f0;
+    width: calc(100% - 33px);
+    overflow-x: auto;
+}
+
+figure {
+     border-bottom: 3px solid dodgerblue;
+}
+
+.avatar {
+    border-radius: 2px;
 }
 
 

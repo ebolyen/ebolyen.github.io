@@ -4,15 +4,16 @@
 -->
 <html>
     <head>
+<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
         <link rel="stylesheet" type="text/css" href="/assets/normalize.css">
         <link rel="stylesheet" type="text/css" href="/assets/main.css">
         <script type="text/javascript" src="/assets/anchor.min.js"></script>
     </head>
     <body>
-        <nav>
+        <nav class='site-nav'>
             <section>
-                <h1>EXDEV Link</h1>
-                <p>Some text here.</p>
+	    	<h1>{{ site.title }}</h1>
+		<p>{{ site.description }}</p>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
@@ -24,6 +25,11 @@
 {{ content }}
 </article>
         </main>
+	<footer>
+	    <section>
+		This is a footer
+	    </section>
+	</footer>
         <script type="text/javascript">
             anchors.add();
         </script>
