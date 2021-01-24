@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--
-    Hello
--->
+{% include license.html %}
 <html>
     <head>
 	<meta name="viewport" content="width=device-width">
@@ -10,28 +8,30 @@
         <script type="text/javascript" src="/assets/anchor.min.js"></script>
     </head>
     <body>
-        <nav class='site-nav'>
-            <section>
-	    	<h1>{{ site.title }}</h1>
-		<p>{{ site.description }}</p>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                </ul>
-            </section>
-        </nav>
-        <main role="main">
+	<div id='wrapper'>
+		<nav class='site-nav'>
+		    <section>
+			<h1>{{ site.title }}</h1>
+			<p>{{ site.description }}</p>
+			<ul>
+			    <li><a href="/">Home</a></li>
+			    <li><a href="/about">About</a></li>
+			</ul>
+		    </section>
+		</nav>
+		<main role="main">
 <article>
 {{ content }}
 </article>
-        </main>
-	<footer>
-	    <section>
-		This is a footer
-	    </section>
-	</footer>
-        <script type="text/javascript">
-            anchors.add();
-        </script>
+		</main>
+		<footer>
+		    <section>
+			{% include footer.html %}
+		    </section>
+		</footer>
+		<script type="text/javascript">
+		    anchors.add();
+		</script>
+	</div>
     </body>
 </html>
